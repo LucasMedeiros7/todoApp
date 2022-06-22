@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Iconscout Link For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="nova-tarefa">
+        <input type="text" placeholder="Nova tarefa" />
+        <button><i class="uil uil-plus"></i></button>
+      </form>
+      <div class="status-tarefa">
+        <div class="filtros">
+          <span id="todas" class="active">Todas</span>
+          <span id="pendentes">Pendentes</span>
+          <span id="completas">Completas</span>
+        </div>
+        <button class="btn-limpar">Limpar todas</button>
+      </div>
+      <ul class="lista-tarefas"></ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

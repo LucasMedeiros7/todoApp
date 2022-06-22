@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* \\\ Config geral /// */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: yellowgreen;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  background-color: #f7f7f7;
+  max-width: 405px;
+  margin: 135px auto;
+  border-radius: 8px;
+  padding: 28px 0;
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.3);
+}
+
+/* \\\ Campo para adicionar tarefas /// */
+.nova-tarefa {
+  height: 52px;
+  padding: 0 25px;
+  display: flex;
+}
+
+.nova-tarefa input {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+}
+
+.nova-tarefa input:focus {
+  outline: 1px solid #ddd;
+}
+
+.nova-tarefa button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  font-size: 24px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: 0.2s;
+  border-left-color: transparent;
+}
+
+.nova-tarefa button:hover {
+  color: #f7f7f7;
+  background-color: yellowgreen;
+}
+
+/* \\\ status das tarefas /// */
+.status-tarefa,
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-tarefa {
+  padding: 18px 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.filtros {
+  display: flex;
+  gap: 8px;
+}
+
+.filtros span {
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.filtros span.active {
+  color: yellowgreen;
+}
+
+.status-tarefa .btn-limpar {
+  background-color: yellowgreen;
+  color: #f7f7f7;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* \\\ lista de tarefas/// */
+.lista-tarefas {
+  margin: 20px 25px;
+}
+
+.lista-tarefas .tarefa {
+  font-size: 17px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.lista-tarefas .tarefa:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.tarefa label {
+  display: flex;
+}
+
+.tarefa label p.checked {
+  text-decoration: line-through;
+}
+
+.tarefa label input {
+  margin-top: 6px;
+  margin-right: 12px;
+}
+
+/* \\\ configuração da tarefa /// */
+.tarefa .config {
+  cursor: pointer;
+  position: relative;
+}
+
+.config .menu-tarefa {
+  position: absolute;
+  right: -5px;
+  bottom: -65px;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+  padding: 5px 0;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+.config .menu-tarefa.mostra {
+  transform: scale(1);
+}
+
+.menu-tarefa li {
+  height: 25px;
+  font-size: 16px;
+  margin: 2px;
+  padding: 17px 15px;
+  justify-content: flex-start;
+}
+
+.menu-tarefa li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-tarefa li:hover {
+  background-color: #eeeeee;
+}
+
+.menu-tarefa li i {
+  padding-right: 7px;
+}
