@@ -20,6 +20,7 @@ filtros.forEach((status) => {
 
 function mostrarTarefa(filtro) {
   let li = "";
+  console.log(li);
 
   if (armazenamentoDeTarefas) {
     armazenamentoDeTarefas.forEach((tarefa, id) => {
@@ -44,7 +45,9 @@ function mostrarTarefa(filtro) {
     });
   }
 
-  listaDeTarefas.innerHTML = li || `Você não possui tarefas aqui`;
+  listaDeTarefas.innerHTML =
+    li ||
+    `Você não possui tarefas ${filtro == "todas" ? "aqui" : filtro + "s"}`;
 }
 
 mostrarTarefa("todas");
