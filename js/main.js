@@ -81,7 +81,7 @@ limparTodas.addEventListener("click", () => {
   //Remove todas as tarefas do array/armazenamentoDeTarefas
   armazenamentoDeTarefas.splice(0, armazenamentoDeTarefas.length);
   localStorage.setItem("lista-tarefas", JSON.stringify(armazenamentoDeTarefas));
-  mostrarTarefa();
+  mostrarTarefa("todas");
 });
 
 function atualizaStatus(tarefaSelecionada) {
