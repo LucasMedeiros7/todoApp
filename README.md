@@ -1,4 +1,4 @@
-# **ToDoApp <img src="./favicon.svg">**
+# **ToDoApp <img src="./img/favicon.svg">**
 
 <p align="center">
     <img src="./img/img.jpg" width="500" title="hover text">
