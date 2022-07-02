@@ -37,7 +37,7 @@ function mostrarTarefa(filtro) {
                   <i onclick="mostrarMenu(this)" class="uil uil-ellipsis-h"></i>
                   <ul class="menu-tarefa">
                     <li onclick="editaTarefa(${id}, '${tarefa.nome}')"><i class="uil uil-pen"></i>Editar</li>
-                    <li onclick="deletaTarefa(${id})"><i class="uil uil-trash"></i>Delete</li>
+                    <li onclick="deletaTarefa(${id})"><i class="uil uil-trash"></i>Deletar</li>
                   </ul>
                 </div>
               </li>`;
